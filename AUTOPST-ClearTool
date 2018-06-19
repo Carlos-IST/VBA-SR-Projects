@@ -1,0 +1,30 @@
+Sub Clear_Tool()
+'
+' Clear_Tool Macro
+' clear tool
+'
+
+    Sheets("Name_of_Sheet_1").Select
+    Range("c5").Select
+    Selection.ClearContents
+    Range("E6").Select
+    Selection.ClearContents
+    Range("b21:c34").Select
+    Selection.ClearContents
+    
+    Sheets("Name_of_Sheet_2").Select
+    Range("A1:zz500").Select
+    Selection.ClearContents
+    
+    Sheets("Name_of_Sheet_3").Select
+    Range("A9:Lj500").Select
+    Selection.ClearContents
+    ActiveWindow.ScrollWorkbookTabs Sheets:=-1
+    Sheets("Name_of_Sheet_1").Select
+    Range("E6").Select
+    ActiveWorkbook.RefreshAll
+    
+    Sheets("Name_of_Sheet_1").Select
+    Range("c5").Select
+    
+End Sub
